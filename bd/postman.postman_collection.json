@@ -1,0 +1,1144 @@
+{
+	"info": {
+		"_postman_id": "9f3b3ef2-06e2-4c44-ab09-6bbaa6ec4299",
+		"name": "postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34487888"
+	},
+	"item": [
+		{
+			"name": "adicionar cliente 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "Ana",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "26335022028",
+							"type": "text"
+						},
+						{
+							"key": "dataNascimento",
+							"value": "1965-01-25",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cliente/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cliente",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar cliente 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "José",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "25128598004",
+							"type": "text"
+						},
+						{
+							"key": "dataNascimento",
+							"value": "1975-06-22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cliente/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cliente",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/cliente/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cliente",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar cliente 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/cliente/listar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cliente",
+						"listar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar cliente 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/cliente/deletar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cliente",
+						"deletar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar endereço 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_cliente",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "528914",
+							"type": "text"
+						},
+						{
+							"key": "logradouro",
+							"value": "Av. Julio antonio Thurler",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Olaria",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "Nova Friburgo",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "28620000",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "Casa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/endereco/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"endereco",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar endereço 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_cliente",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "528915",
+							"type": "text"
+						},
+						{
+							"key": "logradouro",
+							"value": "Av. Julio antonio Thurler",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "124",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Olaria",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "Nova Friburgo",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "28620000",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "Apt",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/endereco/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"endereco",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar endereço 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_cliente",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "528919",
+							"type": "text"
+						},
+						{
+							"key": "logradouro",
+							"value": "Av. Julio antonio Thurler",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "125",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Olaria",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "Nova Friburgo",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "28620000",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "Apt",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/endereco/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"endereco",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar endereço 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_cliente",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "528919",
+							"type": "text"
+						},
+						{
+							"key": "logradouro",
+							"value": "Rua Imaculada Conceição",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "64",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Jardim Ouro Preto",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "Nova Friburgo",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "28633195",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "Apt",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/endereco/alterar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"endereco",
+						"alterar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar endereço 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/endereco/listar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"endereco",
+						"listar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar endereços",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/endereco/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"endereco",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar endereço 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/endereco/deletar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"endereco",
+						"deletar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar produto 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_categoria",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Cantoneira",
+							"type": "text"
+						},
+						{
+							"key": "preco",
+							"value": "5.99",
+							"type": "text"
+						},
+						{
+							"key": "peso",
+							"value": "0.20",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "Kit canoreiras",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar produto 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_categoria",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "453216",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Smartwatch",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "Relógio smart",
+							"type": "text"
+						},
+						{
+							"key": "preco",
+							"value": "150.00",
+							"type": "text"
+						},
+						{
+							"key": "peso",
+							"value": "1.5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar produto 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_categoria",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Cantoneira",
+							"type": "text"
+						},
+						{
+							"key": "preco",
+							"value": "10.00",
+							"type": "text"
+						},
+						{
+							"key": "peso",
+							"value": "2.00",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "Kit Cantoneiras",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produto/alterar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produto",
+						"alterar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/produto/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produto",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar produto 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/produto/listar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produto",
+						"listar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar produto 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/produto/deletar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produto",
+						"deletar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar variante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_produto",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "cor",
+							"value": "cromatizada",
+							"type": "text"
+						},
+						{
+							"key": "tamanho",
+							"value": "25,4 x 25,4mm",
+							"type": "text"
+						},
+						{
+							"key": "quantidade",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "imagem",
+							"value": "img.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/variante/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"variante",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar variante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_produto",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "cor",
+							"value": "cromatizada",
+							"type": "text"
+						},
+						{
+							"key": "tamanho",
+							"value": "25,4 x 25,4mm",
+							"type": "text"
+						},
+						{
+							"key": "quantidade",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "imagem",
+							"value": "img.png",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/variante/alterar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"variante",
+						"alterar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar variantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/variante/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"variante",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar variante 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/variante/listar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"variante",
+						"listar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar variante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/variante/deletar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"variante",
+						"deletar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar cliente 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "Augusto",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "25128598004",
+							"type": "text"
+						},
+						{
+							"key": "dataNascimento",
+							"value": "1975-06-22",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cliente/alterar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cliente",
+						"alterar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar categoria 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "codigo",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Eletronicos",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "Produtos eletronicos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categoria/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categoria",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar categoria 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "codigo",
+							"value": "456789",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Marcenaria",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "Produtos de marcenaria",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categoria/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categoria",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar categoria 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "codigo",
+							"value": "789456",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Eletronicos",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "Produtos Eletronicos",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categoria/alterar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categoria",
+						"alterar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/categoria/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categoria",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar categoria 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/categoria/listar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categoria",
+						"listar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar categoria 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categoria/deletar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categoria",
+						"deletar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
